@@ -1,0 +1,1 @@
+start powershell -command "& '.\nvidia-kill.ps1'"
