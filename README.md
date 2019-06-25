@@ -1,5 +1,5 @@
 # nvidia-optimus-kill
-This is a simple Windows Powershell script intended to alleviate a bug in the Nvidia Optimus graphics card switching technology that prevents the laptop from switching the dGPU off even when it's no longer in use. This leads to unnecessary power drain and periodic stuttering as Optimus tries and fails to switch off the dGPU.
+This is a simple Windows Powershell script intended to alleviate a bug in the Nvidia Optimus graphics card switching technology that prevents the laptop from switching the dGPU off even when it's no longer in use. This leads to unnecessary power drain and periodic stuttering. The bug seems to be triggered by using an external monitor with some laptop models. 
 
 ## How to use
 Double click nvidia-optimus-kill.bat and you should be presented with a list of processes currently running on the NVIDIA GPU. Press "y" when prompted to forcefully stop them, allowing Optimus to switch the discrete GPU off.
