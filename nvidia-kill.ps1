@@ -5,7 +5,7 @@
 
 $smiOutput = nvidia-smi --query-compute-apps=pid,name --format=csv
 $dgpuProcesses = $smiOutput | ConvertFrom-Csv
-echo "Running dGPU processes:`n"
+Write-Host "Running dGPU processes:`n"
 ForEach ($p in $dgpuProcesses) {
   $process = Get-Process -Id $p.pid
   Write-Host $process.ProcessName -NoNewline
